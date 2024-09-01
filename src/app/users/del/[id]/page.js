@@ -8,7 +8,7 @@ export default function Page({params}) {
     useEffect(() => {
       async function getUsers() {
         try {
-          const res = await fetch(`http://localhost:3001/api/users/${id}`);
+          const res = await fetch(`https://backend-main-lyart.vercel.app/api/users/${id}`);
           if (!res.ok) {
             console.error('Failed to fetch data');
             return;
@@ -30,7 +30,7 @@ export default function Page({params}) {
   const handleDeleteSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch('http://localhost:3001/api/users/${id}', {
+    const res = await fetch('https://backend-main-lyart.vercel.app/api/users/${id}', {
       method: 'DELETE',
       headers: {
         Accept : 'application/json',

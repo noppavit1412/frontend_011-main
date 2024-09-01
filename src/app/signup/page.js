@@ -12,7 +12,7 @@ export default function Page() {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:3001/api/users', {
+      const res = await fetch('https://backend-main-lyart.vercel.app/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
