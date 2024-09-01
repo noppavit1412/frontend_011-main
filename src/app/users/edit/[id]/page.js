@@ -40,7 +40,7 @@ export default function Page({params}) {
       headers: {
         Accept : 'application/json',
       },
-      body: JSON.stringify({firstname, lastname, username, assword, id}),
+      body: JSON.stringify({firstname, lastname, username, password, id}),
     });
 
     const result = await res.json();
